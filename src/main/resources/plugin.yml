@@ -1,0 +1,7 @@
+name: Sample
+version: 1.0
+main: me.thkim7527.sample.Plugin
+api-version: 1.17
+commands:
+  sample:
+    usage: Sample

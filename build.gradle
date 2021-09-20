@@ -1,0 +1,21 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+group 'me.thkim7527'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://papermc.io/repo/repository/maven-public/' }
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.30'
+    compileOnly 'io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT'
+}
+
+shadowJar {
+    destinationDir new File('C:/Users/thkim7527/Project/Minecraft/Server/PaperMC/plugins')
+    archiveFileName = rootProject.name + '.jar'
+}
