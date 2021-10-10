@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.31'
     id 'com.github.johnrengelman.shadow' version '7.0.0'
 }
 
@@ -8,11 +8,13 @@ group 'me.thkim7527'
 repositories {
     mavenCentral()
     maven { url 'https://papermc.io/repo/repository/maven-public/' }
+    maven { url 'https://maven.enginehub.org/repo/' }
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.30'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.5.31'
     compileOnly 'io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT'
+    compileOnly 'com.sk89q.worldedit:worldedit-bukkit:7.2.6'
 }
 
 shadowJar {
