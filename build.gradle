@@ -5,6 +5,10 @@ plugins {
 
 group 'me.thkim7527'
 
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
 repositories {
     mavenCentral()
     maven { url 'https://papermc.io/repo/repository/maven-public/' }
@@ -13,8 +17,8 @@ repositories {
 
 dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.0'
-    compileOnly 'io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT'
-    compileOnly 'com.sk89q.worldedit:worldedit-bukkit:7.2.6'
+    compileOnly 'io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT'
+    compileOnly 'com.sk89q.worldedit:worldedit-bukkit:7.2.8'
 }
 
 shadowJar {
