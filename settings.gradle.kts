@@ -1,1 +1,1 @@
-rootProject.name = 'PaperMC-Sample'
+rootProject.name = "PaperMC-Sample"

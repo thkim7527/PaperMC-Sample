@@ -5,3 +5,5 @@ api-version: 1.18
 commands:
   sample:
     usage: Sample
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:1.6.10
